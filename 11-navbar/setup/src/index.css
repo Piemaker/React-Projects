@@ -187,7 +187,7 @@ nav {
   transition: var(--transition);
 }
 .show-container {
-  height: 10rem;
+  height: auto;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -206,6 +206,8 @@ nav {
   }
   .links-container {
     height: auto !important;
+    /* must include important because we use inline CSS to set the height to 0, so this overwrites it
+     and make the links appear in bigger screens  */
   }
   .links {
     display: flex;

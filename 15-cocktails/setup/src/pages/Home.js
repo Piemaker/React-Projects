@@ -4,10 +4,14 @@ import SearchForm from '../components/SearchForm'
 
 const Home = () => {
   return (
-    <div>
-      <h2>home page</h2>
-    </div>
-  )
+    <main>
+      <SearchForm></SearchForm>
+      <section className="section">
+        <h2 className="section-title">cocktails</h2>
+        <CocktailList></CocktailList>
+      </section>
+    </main>
+  );
 }
 
 export default Home

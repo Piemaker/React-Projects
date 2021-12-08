@@ -407,6 +407,9 @@ Stripe Styles
   display: grid;
   gap: 0.25rem 2rem;
 }
+.col-auto{
+   grid-auto-flow: column;
+}
 .col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
